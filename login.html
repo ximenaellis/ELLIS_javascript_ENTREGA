@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te cuido</title>
+    <link rel="shortcut icon" href="./imagenes/tecuidoLOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="isologotipo_header">
+            <div class="iso_header">
+                <img src="./imagenes/tecuidoLOGO.png" alt="Logo Me cuido" title="Logo Me cuido" width="40px">
+            </div>
+    
+            <div>
+                <h2 class="logo_header">Me cuido</h2>
+            </div>
+        </div>
+
+        <div class="fecha">
+            <p id="localizacion">----</p>
+            <p id="fecha_de_hoy">Hoy es</p>
+        </div>
+
+        <div id="contenedor_clima">
+            <div id="icono_clima"></div>
+            <div id="temperatura">-ºC</div>
+            <div id="resumen">----</div>
+        </div>
+
+    </div>
+
+
+    <div class="banner_recomendaciones">
+        <div class="saludo_y_sientes">
+            <h1 id="saludo"></h1>
+
+
+            <div class="contenedor_como_te_sientes">
+
+                <div id="contenedor_clima_intro">
+                    <h4 id=clima_intro class="como_te_sientes"></h4>
+                    <h4 class="como_te_sientes">¿Cómo te sientes?</h4>
+                </div>
+        
+                <div class="botones_emojis">
+                    <button id="excelente" class="emoji">😃</button>
+                    <button id="bien" class="emoji">🙂</button>
+                    <button id="maso" class="emoji">😒</button>
+                    <button id="mal" class="emoji">🙁</button>
+                    <button id="pesimo" class="emoji">😩</button>
+                    <button id="furioso" class="emoji">😡</button>
+                </div>
+                <div>
+                    <h2 id="recomendacion"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor_agua">
+            <h4>¿Cuántos vasos de agua vas tomando hoy?</h4>
+            <div class="contenedor_contador">
+                <button id="menos">-</button>
+                <div id="valor_contador">0</div>
+                <button id="mas">+</button>
+            </div>
+            <div class="jarra_con_vasos">
+                <div>
+                    <img src="./imagenes/jarra_con_agua.png" alt="Jarra con agua" title="Jarra con agua" width="100px">
+                </div>
+                <div id=#vasos_de_agua>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <nav>
+        <form action="" id="ingresa_remedio">
+            <label for="nombre_remedio">Ingresa un remedio
+                <input id="nombre_remedio" type="text">
+            </label>
+            <label for="mg_remedio">Mg
+                <input id="mg_remedio" type="number">
+            </label>
+            <label for="stock_remedio">Cantidad
+                <input id="stock_remedio" type="number">
+            </label>
+            <button id="agregar_remedio" type="submit" value="Agregar">Agregar</button>
+
+        </form>
+    </nav>
+
+    <table id="farmacia">
+
+        <h2 class="titulo_tabla">Mi stock de remedios</h2>
+
+        <tr id="titulo_tr">
+            <td class="titulo_nombre">Nombre remedio</td>
+            <td class="mg_remedio">Mg</td>
+            <td class="cantidad_pastillas">Stock</td>
+
+        </tr>
+        <tbody id="contenido_farmacia">
+
+
+        </tbody>
+
+    </table>
+
+<button id="vaciar_farmacia" type="click" value="Vaciar">Eliminar todo</button>
+
+
+<br>
+<br>
+<br>
+
+
+
+<script src="./login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
+
